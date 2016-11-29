@@ -1,0 +1,14 @@
+[user]
+	name = Martin Bohman
+	email = martins.mailadress@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[core]
+	editor = subl -w
+[push]
+	default = simple
