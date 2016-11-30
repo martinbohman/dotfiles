@@ -54,8 +54,8 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin"
-# export PATH="/Users/M/.rbenv/shims:$PATH"
-# export PATH="$PATH:/Users/M/.rbenv/versions/2.2.2/bin"
+export PATH="/Users/M/.rbenv/shims:$PATH"
+# export PATH="$PATH:/Users/M/.rbenv/versions/2.2.3/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
