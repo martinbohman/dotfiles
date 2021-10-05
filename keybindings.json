@@ -1,0 +1,244 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "cmd+shift+d",
+        "command": "editor.action.duplicateSelection"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "cursorDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "cursorUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "cursorRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "cursorLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "cursorDownSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "cursorUpSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+k",
+        "command": "cursorDownSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "cursorUpSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "cursorRightSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "cursorLeftSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "cursorWordPartRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "cursorWordPartLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+ctrl+l",
+        "command": "cursorWordPartRightSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+ctrl+j",
+        "command": "cursorWordPartLeftSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+shift+l",
+        "command": "cursorEndSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+shift+j",
+        "command": "cursorHomeSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+l",
+        "command": "cursorEnd",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+j",
+        "command": "cursorHome",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+shift+i",
+        "command": "cursorTopSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+shift+k",
+        "command": "cursorBottomSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "cursorTop",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+k",
+        "command": "cursorBottom",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+alt+k",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+cmd+alt+i",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "editorScroll",
+        "args": {
+            "by": "line",
+            "to": "up",
+            "value": 5,
+            "revealCursor": true
+        },
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "editorScroll",
+        "args": {
+            "by": "line",
+            "to": "down",
+            "value": 5,
+            "revealCursor": true
+        },
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+k",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+space",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": " "
+        }
+    },
+    {
+        "key": "cmd+p",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "ctrl+shift+1",
+        "command": "workbench.action.moveEditorToFirstGroup"
+    },
+    {
+        "key": "ctrl+shift+2",
+        "command": "workbench.action.moveEditorToLastGroup"
+    },
+    {
+        "key": "ctrl+shift+3",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.openEditorAtIndex1"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.openEditorAtIndex2"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.openEditorAtIndex3"
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.openEditorAtIndex4"
+    },
+    {
+        "key": "cmd+5",
+        "command": "workbench.action.openEditorAtIndex5"
+    },
+    {
+        "key": "cmd+6",
+        "command": "workbench.action.openEditorAtIndex6"
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.action.openEditorAtIndex7"
+    },
+    {
+        "key": "cmd+8",
+        "command": "workbench.action.openEditorAtIndex8"
+    },
+    {
+        "key": "cmd+9",
+        "command": "workbench.action.openEditorAtIndex9"
+    }
+
+]
