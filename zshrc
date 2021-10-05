@@ -47,7 +47,7 @@ ZSH_THEME="minimal"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -55,6 +55,9 @@ source $ZSH/oh-my-zsh.sh
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin"
 export PATH="/Users/M/.rbenv/shims:$PATH"
+export PATH="/usr/local/var/postgres:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.6/bin:$PATH"
+# export PATH="/usr/local/anaconda3/bin:$PATH"  # commented out by conda initialize
 # export PATH="$PATH:/Users/M/.rbenv/versions/2.2.3/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -83,11 +86,33 @@ alias gc="git commit"
 alias gl="git log --pretty=format:'%C(yellow)%h%Cred%d%Creset - %C(cyan)%an %Creset: %s %Cgreen(%cr)'"
 alias gls="gl --stat"
 alias gu="git pull -X patience"
-# alias gp="git push"
+alias gp="git push"
+alias gpu="git push -u origin HEAD"
 alias gd="git diff --patience --cached"
-alias t='./bin/test test'
+alias t='bundle exec ./bin/spring stop && bundle exec ./bin/rake test'
 alias marko="open -a marko"
 alias fredrik_berntsson="echo LUL"
+alias rdbrs="bundle exec rake db:drop RAILS_ENV=test && bundle exec rake db:create RAILS_ENV=test && bundle exec rake db:migrate RAILS_ENV=test"
+alias kollaposten="ruby ~/git/post/track.rb"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 # export NVM_DIR=~/.nvm
 # source $(brew --prefix nvm)/nvm.sh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
