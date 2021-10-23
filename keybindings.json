@@ -256,4 +256,9 @@
         "key": "alt+cmd+3",
         "command": "workbench.action.editorLayoutThreeColumns"
     },
+    {
+        "key": "alt+shift+space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
 ]
